@@ -1,0 +1,22 @@
+{
+    "name": "impresion-chat-bot",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Ezequiel Imaz <tavelliezequiel@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^1.2.0",
+        "dotenv": "^16.0.3",
+        "mercadopago": "^1.5.14",
+        "mongoose": "^6.7.5",
+        "pdf-to-printer": "^5.4.0",
+        "pdfjs-dist": "^3.1.81",
+        "qrcode-terminal": "^0.12.0",
+        "whatsapp-web.js": "https://github.com/pedroslopez/whatsapp-web.js#fix-buttons-list"
+    }
+}
