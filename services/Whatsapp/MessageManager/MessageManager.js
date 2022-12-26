@@ -41,7 +41,8 @@ class MessageManager {
                     else false;
                 });
 
-                if (!option) {
+                managementOption: if (!option) {
+                    if (this.message.body === "Cerrar") break managementOption;
                     this.chat.sendMessage(
                         "Opcion no disponible. Seleccione una que le aparezca. Si no quiere continuar escriba 'Cerrar'"
                     );
@@ -126,6 +127,8 @@ class MessageManager {
             .sort({ createdAt: -1 })
             .exec();
     }
+
+    async isChatClosing() {}
 }
 
 module.exports = MessageManager;

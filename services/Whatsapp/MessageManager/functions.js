@@ -28,7 +28,7 @@ module.exports = {
         const { messageDb } = extra;
         const { filename } = messageDb;
         const media = await message.downloadMedia();
-        if (!media.filename.includes(".pdf")) {
+        if (!media.filename || !media.filename.includes(".pdf")) {
             await chat.sendMessage(response.functionMessages.invalidFile);
             await messageDb.update({ status: "finish" });
             return;
